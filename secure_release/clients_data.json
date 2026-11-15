@@ -1,0 +1,82 @@
+{
+  "generic-host-01": {
+    "hostname": "Generic-Host-01",
+    "ip_address": "10.10.10.50",
+    "timestamp": "2026-01-01T00:00:00Z",
+    "last_seen": "2026-01-01T00:00:00Z",
+    "active_window": "Application Window",
+    "open_windows": [
+      "Application-1",
+      "Application-2",
+      "Application-3"
+    ],
+    "cpu_percent": 20.0,
+    "ram_percent": 35.0,
+    "uptime_seconds": 3600,
+    "os": "Windows",
+    "network": {
+      "gateway": "10.10.10.1",
+      "interface_name": "Ethernet adapter Ethernet",
+      "interface_type": "LAN",
+      "gateway_reachable": true,
+      "critical_ips": [
+        {
+          "ip": "10.10.10.1",
+          "status": "reachable"
+        },
+        {
+          "ip": "10.10.10.9",
+          "status": "reachable"
+        }
+      ]
+    },
+    "speaker": {
+      "speaker_connected": false,
+      "audio_status": "Unknown",
+      "connection_type": "Unknown",
+      "volume": 0,
+      "muted": false,
+      "device_name": "Generic-Audio-Device"
+    }
+  },
+  "generic-host-02": {
+    "hostname": "Generic-Host-02",
+    "ip_address": "10.10.10.51",
+    "timestamp": "2026-01-01T00:00:00Z",
+    "last_seen": "2026-01-01T00:00:00Z",
+    "active_window": "Application Window",
+    "open_windows": [
+      "Application-1",
+      "Application-2",
+      "Application-3"
+    ],
+    "cpu_percent": 22.0,
+    "ram_percent": 41.0,
+    "uptime_seconds": 3700,
+    "os": "Windows",
+    "network": {
+      "gateway": "10.10.10.1",
+      "interface_name": "Ethernet adapter Ethernet",
+      "interface_type": "LAN",
+      "gateway_reachable": true,
+      "critical_ips": [
+        {
+          "ip": "10.10.10.1",
+          "status": "reachable"
+        },
+        {
+          "ip": "10.10.10.9",
+          "status": "reachable"
+        }
+      ]
+    },
+    "speaker": {
+      "speaker_connected": false,
+      "audio_status": "Unknown",
+      "connection_type": "Unknown",
+      "volume": 0,
+      "muted": false,
+      "device_name": "Generic-Audio-Device"
+    }
+  }
+}

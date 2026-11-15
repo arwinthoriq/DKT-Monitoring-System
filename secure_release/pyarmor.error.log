@@ -1,0 +1,35 @@
+11792 MainProcess 2026-11-15 18:14:22,545
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyarmor\cli\core\__init__.py", line 65, in _import_pytransform3
+    return __import__(
+        'pytransform3', globals=globals(), locals=locals(),
+        fromlist=('__pyarmor__',), level=1
+    )
+ModuleNotFoundError: No module named 'pyarmor.cli.core.pytransform3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyarmor\cli\__main__.py", line 752, in main
+    main_entry(sys.argv[1:])
+    ~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyarmor\cli\__main__.py", line 740, in main_entry
+    return args.func(ctx, args)
+           ~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyarmor\cli\__main__.py", line 244, in cmd_gen
+    builder.process(options)
+    ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyarmor\cli\generate.py", line 179, in process
+    Pytransform3.pre_build(self.ctx)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyarmor\cli\core\__init__.py", line 107, in pre_build
+    m = Pytransform3.init(ctx)
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyarmor\cli\core\__init__.py", line 85, in init
+    Pytransform3._pytransform3 = m = _import_pytransform3()
+                                     ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyarmor\cli\core\__init__.py", line 70, in _import_pytransform3
+    plat, arch = check_and_install_prebuilt_package()
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python314\Lib\site-packages\pyarmor\cli\core\__init__.py", line 54, in check_and_install_prebuilt_package
+    raise RuntimeError('"%s" is still not supported by Pyarmor' % platname)
+RuntimeError: "w.i.n.d.o.w.s...x.8.6._.6.4" is still not supported by Pyarmor
